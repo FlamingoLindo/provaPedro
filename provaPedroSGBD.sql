@@ -1,7 +1,7 @@
 create database provaPedro;
 
 create table automoveis(
-id serial primary key,
+idAuto serial primary key,
 marca varchar(100),
 modelo varchar(100),
 cor varchar(100),
@@ -14,26 +14,28 @@ insert into automoveis (marca,modelo,cor,importado,numeroRodas,preco)values("Nis
 select * from automoveis;
 
 create table funcionario(
-id serial primary key,
-nome varchar(100),
-sobrenome varchar(100),
-dataNascimento date,
-rg varchar(100),
-cpf varchar(100)
+idFun serial primary key,
+nomeFun varchar(100),
+sobrenomeFun varchar(100),
+dataNascimentoFun date,
+rgFun varchar(100),
+cpfFun varchar(100)
 );
 
-insert into funcionario (nome,sobrenome,dataNascimento,rg,cpf)values("Adolfo","Jonathan","1999-02-15","25.865.801-0","879.855.410-71");
+insert into funcionario (nomeFun,sobrenomeFun,dataNascimentoFun,rgFun,cpfFun)values("Adolfo","Jonathan","1999-02-15","25.865.801-0","879.855.410-71");
 select * from funcionario;
 
 create table cliente(
-id serial primary key,
-nome varchar(100),
-sobrenome varchar(100),
-dataNascimento date,
-rg varchar(100),
-cpf varchar(100),
+idCli serial primary key,
+nomeCli varchar(100),
+sobrenomeCli varchar(100),
+dataNascimentoCli date,
+rgCli varchar(100),
+cpfCli varchar(100),
 gasto float
 );
 
-insert into cliente (nome,sobrenome,dataNascimento,rg,cpf,gasto)values("Junior","Burtan","2023-12-01","42.123.633-4","876.922.430-29",2452312254);
+insert into cliente (nomeCli,sobrenomeCli,dataNascimentoCli,rgCli,cpfCli,gasto)values("Junior","Burtan","2023-12-01","42.123.633-4","876.922.430-29",2452312254);
 select * from cliente;
+
+
