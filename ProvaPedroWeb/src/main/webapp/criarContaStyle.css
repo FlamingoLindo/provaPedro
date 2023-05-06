@@ -1,0 +1,27 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 5 de mai. de 2023, 22:41:22
+    Author     : flamingo_lindo
+*/
+
+.background{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+
+.menu{
+    font-size: 50px;
+    float: left;
+    text-shadow: 5px 5px  5px #808080;
+}
+
+
+input[type=radio], input[type=checkbox]{
+    transform: scale(2);
+    
+}
+
